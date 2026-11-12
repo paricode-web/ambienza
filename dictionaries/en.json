@@ -17,7 +17,7 @@
     "viewMenu": "View the menu",
     "reserve": "Reserve a table"
   },
-    "craft": {
+  "craft": {
     "eyebrow": "The craft",
     "title": "Every detail, placed by hand."
   },
@@ -78,5 +78,13 @@
     "followTitle": "Follow",
     "rights": "All rights reserved."
   },
-  "lang": { "switchTo": "فارسی" }
+  "lang": { "switchTo": "فارسی" },
+
+  "designEyebrow": "The Kitchen",
+  "designTitle": "Dishes made with care",
+  "designText": "Fresh ingredients, balanced flavors and a menu that changes with the season. Every plate is made to be shared and remembered.",
+
+  "tasteEyebrow": "The Space",
+  "tasteTitle": "Where design, comfort and character come together",
+  "tasteText": "Warm light, natural materials and quiet corners. A room made for long dinners and slow conversation."
 }
