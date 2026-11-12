@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cream: #F4EBDD;
+  --color-sand: #D6C5A8;
+  --color-espresso: #412118;
+  --color-moss: #3E4B3B;
+  --color-copper: #98511F;
+
+  /* Fonts */
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jost), system-ui, sans-serif;
+
+  /* Breakpoints: mobile <768, tablet 768-1199, desktop >=1200 */
+  --breakpoint-md: 48rem;
+  --breakpoint-desktop: 75rem;
+
+  /* 4px grid: cards 24, sections 96 */
+  --spacing-card: 24px;
+  --spacing-section: 96px;
+
+  --radius-button: 12px;
+
+  /* No shadows anywhere */
+  --shadow-*: initial;
+}
+
+@layer base {
+  html {
+    background: var(--color-cream);
+    color: var(--color-espresso);
+    scroll-behavior: smooth;
+     scroll-padding-top: 5rem; 
+  }
+
+  /* Persian: Cormorant and Jost have no Persian glyphs */
+  html[lang="fa"] {
+    --font-sans: var(--font-vazir), system-ui, sans-serif;
+    --font-display: var(--font-vazir), system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html[lang="fa"] body {
+    line-height: 1.9;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  html[lang="fa"] h1,
+  html[lang="fa"] h2,
+  html[lang="fa"] h3,
+  html[lang="fa"] h4 {
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  img, picture, video {
+    border-radius: 0; /* photos stay square */
+  }
+
+  ::selection {
+    background: var(--color-copper);
+    color: var(--color-cream);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-copper);
+    outline-offset: 3px;
+  }
+
+  hr {
+    border-color: var(--color-sand);
+  }
+
+  @media (min-width: 48rem) {
+    body { font-size: 16px; }
+  }
+
+  @media (min-width: 75rem) {
+    h1, h2, h3, h4 { font-size: 44px; }
+  }
+}
+
+@layer components {
+  /* Label: Jost medium, 12 mobile / 13 desktop */
+  .label {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-moss);
+  }
+
+  /* Price: Cormorant semibold, copper */
+  .price {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--color-copper);
+  }
+
+  @media (min-width: 75rem) {
+    .label { font-size: 13px; }
+  }
+}

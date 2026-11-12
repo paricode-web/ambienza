@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Ambienza",
+    "description": "An ambiance to savor."
+  },
+  "nav": {
+    "about": "About",
+    "menu": "Menu",
+    "atmosphere": "Atmosphere",
+    "reserve": "Reserve",
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "hero": {
+    "title": "An ambiance to savor.",
+    "subtitle": "Warm. Unhurried. Sensory.",
+    "viewMenu": "View the menu",
+    "reserve": "Reserve a table"
+  },
+    "craft": {
+    "eyebrow": "The craft",
+    "title": "Every detail, placed by hand."
+  },
+  "about": {
+    "eyebrow": "Our story",
+    "title": "A table set for slow evenings.",
+    "text": "We cook with seasonal ingredients and let every dish take the time it needs. Come for the food. Stay for the light."
+  },
+  "signature": {
+    "eyebrow": "Signature dish",
+    "title": "Slow-roasted for six hours.",
+    "name": "Salmon carpaccio",
+    "description": "Thin-sliced salmon, capers, orange zest and olive oil.",
+    "tag": "Gluten-free, contains fish",
+    "price": 480,
+    "cta": "Reserve a table"
+  },
+  "menu": {
+    "eyebrow": "A taste of Ambienza",
+    "title": "Made to be savored.",
+    "items": [
+      {
+        "name": "Pan-seared sea bass",
+        "description": "Crisp skin, citrus butter and a squeeze of lime.",
+        "price": 560
+      },
+      {
+        "name": "Seared salmon rolls",
+        "description": "Soft rice, sesame and a slow-simmered soy glaze.",
+        "price": 420
+      },
+      {
+        "name": "Layered honey cake",
+        "description": "Thin layers, warm honey and cream, served cool.",
+        "price": 340
+      }
+    ]
+  },
+  "atmosphere": {
+    "items": [
+      { "word": "Texture", "line": "Crisp crust, cool marble." },
+      { "word": "Heat", "line": "A low flame. A slow room." },
+      { "word": "Light", "line": "Copper glow, warm and soft." }
+    ]
+  },
+  "reserve": {
+    "eyebrow": "Reservations",
+    "title": "Come in. Stay a while.",
+    "text": "Tables fill quickly on weekends. Call us or send a message and we will keep one warm.",
+    "cta": "Reserve a table",
+    "email": "Write to us"
+  },
+  "footer": {
+    "visit": "Visit",
+    "address": "Street name 00, City",
+    "hoursTitle": "Hours",
+    "hours": ["Daily", "12:00 – 23:00"],
+    "followTitle": "Follow",
+    "rights": "All rights reserved."
+  },
+  "lang": { "switchTo": "فارسی" }
+}
