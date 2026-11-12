@@ -5,7 +5,6 @@ import { getDictionary } from "./dictionaries";
 import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/sections/Hero";
 import { Flow } from "../components/sections/Flow";
-import { DesktopFlow } from "../components/sections/DesktopFlow";
 import { Footer } from "../components/sections/Footer";
 import { AnchorScroll } from "../components/ui/AnchorScroll"; 
 
@@ -35,43 +34,21 @@ export default async function Home({
         closeLabel={t.nav.close}
       />
 
-      <Hero
-        {...t.hero}
-        photo={photos.hero.src}
-        gallery={[
-          photos.room1.src,
-          photos.signature.src,
-          photos.room2.src,
-          photos.fish.src,
-          photos.rolls.src,
-          photos.room3.src,
-          photos.cake.src,
-          photos.texture.src,
-          photos.heat.src,
-        ]}
-      />
+    <Hero {...t.hero} photo={photos.hero.src} />
 
-      {/* Mobile and tablet */}
-      <Flow
-        t={t}
-        lang={lang}
-        images={{
-          room4: photos.room1,
-          dish2: photos.fish,
-          salmon: photos.signature,
-          roll: photos.rolls,
-          room3: photos.room3,
-        }}
-      />
+<Flow
+  t={t}
+  lang={lang}
+  images={{
+    room4: photos.room1,
+    dish2: photos.fish,
+    salmon: photos.signature,
+    roll: photos.rolls,
+    room3: photos.room3,
+  }}
+/>
 
-      {/* Desktop (1200 and up) */}
-      <DesktopFlow
-        t={t}
-        lang={lang}
-        images={{ split: photos.signature, full: photos.light }}
-      />
-
-      <Footer t={t.footer} lang={lang} switchLabel={t.lang.switchTo} />
+<Footer t={t.footer} lang={lang} switchLabel={t.lang.switchTo} />
     </main>
   );
 }

@@ -2,9 +2,7 @@
 
 import { useEffect } from "react";
 
-// The page has a mobile flow and a desktop flow. Each section carries
-// data-anchor="menu" (and so on), and only one of the two is visible.
-// This scrolls to the visible one when a link like #menu is clicked.
+
 function findTarget(key: string) {
   const nodes = document.querySelectorAll<HTMLElement>(
     `[data-anchor="${CSS.escape(key)}"]`
